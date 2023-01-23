@@ -1036,6 +1036,9 @@ a:hover {
 	display: flex;
 	align-items: center;
 }
+.group__logo{
+	transition: all 1s ease;
+}
 .group__item:hover .group__logo {
 	transform: scale(1.2);
 	transition: all 1s ease;
