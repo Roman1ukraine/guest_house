@@ -679,6 +679,20 @@ a:hover {
 	}
 
 }
+.sleeping__icon{
+	transition: all 1s ease;
+}
+.sleeping__item:hover .sleeping__icon {
+	transform: scale(1.2);
+	transition: all 1s ease;
+	}
+.sleeping__name{
+	transition: all 1s ease;
+}
+.sleeping__item:hover .sleeping__name{
+	transition: text-shadow 1s ease;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .sleeping__icon {
 	display: inline-block;
 	margin-bottom: 12px;
@@ -785,11 +799,20 @@ a:hover {
 		margin-bottom: 20px;
 	}
 }
+.option__icon{
+	transition: all 1s ease;
+}
 .option__item:hover .option__icon {
 	transform: scale(1.2);
 	transition: all 1s ease;
 	}
-
+.option__text{
+	transition: all 1s ease;
+}
+.option__item:hover .option__text{
+	transition: text-shadow 1s ease;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .option__text {
 	margin-left: 16px;
 	width: 500px;
@@ -1165,10 +1188,15 @@ footer{
 .pages__item_main {
 }
 .pages__item {
-	margin-top: 10px;
+	padding-top: 10px;
 }
 .pages__link{
 	color: #fff;
+}
+
+.pages__item:hover .pages__link{
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #000;
 }
 .footer__social {
 }
@@ -1176,7 +1204,8 @@ footer{
 	width: 130px;
 }
 .social__title{
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	text-align: center;
 
 }
 .social__icons{
@@ -1184,6 +1213,14 @@ footer{
 	justify-content: space-between;
 }
 .social__item {
+	padding: 5px;
+}
+.social__item{
+	transition: transform 0.8s ease;
+}
+.social__item:hover{
+	transform: scale(1.2);
+	transition: transform 0.8s ease;
 }
 .footer__mail {
 }
@@ -1306,74 +1343,12 @@ footer{
 
 
 
-
-
-
-
-
-
-/* .main__logo{
-	animation-name: opacity_main__logo;
-	animation-duration: 1s;
-	animation-timing-function: linear;
+.preorder:hover .preorder__title,
+.case:hover .case__title,
+.guest:hover .guest__main-title,
+.sleeping:hover .sleeping__title,
+.fiches:hover .fiches__title{
+	text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
-@keyframes opacity_main__logo{
-
-	0%{opacity: 0;
-	}
-	100%{opacity: 1;
-	
-	}
-	}
-.main__title{
-	animation-name: opacity_main__title;
-	animation-duration: 2s;
-	animation-timing-function: ease-in;
-}
-@keyframes opacity_main__title{
-
-	0%{opacity: 0;
-
-	}
-	30%{opacity: 0;
-	}
-	100%{opacity: 1;
-	}
-	}
-
-.main__text{
-	animation-name: translate_main__text;
-	animation-duration: 3s;
-	animation-timing-function: ease-in;
-}
-@keyframes translate_main__text{
-
-	0%{opacity: 0;
-		transform: translateY(-20px);
-	}
-	30%{opacity: 0;
-	}
-	100%{opacity: 1;
-		transform: translateY(0px);
-	}
-	}
 
 
-
-
-	.info__button{
-		animation-name: translate_main__text;
-		animation-duration: 2s;
-		animation-timing-function: ease-in;
-	}
-	@keyframes translate_main__text{
-	
-		0%{opacity: 0;
-			transform: translateY(-20px);
-		}
-		30%{opacity: 0;
-		}
-		100%{opacity: 1;
-			transform: translateY(0px);
-		}
-		}	 */
