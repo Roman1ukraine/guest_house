@@ -1387,7 +1387,16 @@ footer{
 	opacity: 1;
 	transition: all 1.5s ease;
 }
-
+.group__item{
+	transform: translateX(100px);
+	opacity: 0;
+	transition: all 1.5s ease;
+}
+.group__item._active{
+	opacity: 1;
+	transform: translateX(0px);
+	transition: all 1.5s ease;
+}
 
 .preorder:hover .preorder__title,
 .case:hover .case__title,
